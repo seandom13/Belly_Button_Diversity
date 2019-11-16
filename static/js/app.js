@@ -27,7 +27,7 @@ function buildMetadata(sample) {
     // buildGauge(data.WFREQ);
 
 
-function buildCharts(sample) {
+
   function pieChart(data) {
     console.log(data);
     let labels = data.otu_ids.slice(0,10);
@@ -169,10 +169,7 @@ function buildCharts(sample) {
       pieChart(data);
       // ## Bubble Chart ##
       bubbleChart(data);
-    });
-
-
-   
+    });  
 }
 
   // @TODO: Use `d3.json` to fetch the sample data for the plots
@@ -212,4 +209,3 @@ function optionChanged(newSample) {
 
 // Initialize the dashboard
   init();
-}
